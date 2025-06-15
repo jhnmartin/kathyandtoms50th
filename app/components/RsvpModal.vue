@@ -1,0 +1,15 @@
+<template>
+  <div class="flex items-center justify-center">
+    <UModal>
+      <UButton label="RSVP for Updates" icon="i-lucide-calendar-check" />
+
+      <template #content>
+        <Placeholder class="h-48 m-4" />
+      </template>
+    </UModal>
+  </div>
+</template>
+
+<script lang="ts" setup></script>
+
+<style></style>

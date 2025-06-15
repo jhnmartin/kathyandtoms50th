@@ -1,8 +1,8 @@
 seo:
   title: Nuxt Landing Template
   description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
-title: Build your landing with [Nuxt UI Pro]{.text-primary}
-description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
+title: Celebrating [50 Years]{.text-primary} of Marriage
+description: Join us Saturday September 20th, 2025 for Kathy and Tom Martin's 50th Wedding Anniversary Celebration!
 hero:
   links:
     - label: Getting Started
@@ -20,24 +20,24 @@ hero:
       to: https://github.com/nuxt-ui-pro/landing
       target: _blank
 section:
-  title: '[Revolutionize]{.text-primary} your coding experience'
+  title: "[Event]{.text-primary} Details"
   description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
   images:
-    mobile: '/images/macbook-mobile.svg'
-    desktop: '/images/macbook.svg'
+    mobile: "/images/macbook-mobile.svg"
+    desktop: "/images/macbook.svg"
   features:
-    - title: Optimize your focus time
-      description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
+    - title: Time and Date
+      description: Sept 20, 2025, 3:00pm
       class: border-l border-primary pl-4
-    - title: Track your best coding hours
-      description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
+    - title: Venue
+      description: Eldorado Country Club, McKinney, TX
       class: border-l border-default pt-4 pl-4
-    - title: Improve workflow efficiency
-      description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
+    - title: Caveats
+      description: Depending on RSVP Quantity we may update the venue to accomodate quest headcount.  It will still be in Mckinney though
       class: border-l border-default pt-4 pl-4
 features:
-  title: Take control of your [productivity]{.text-primary}
-  description: Make every coding session count with smart analytics and workflow optimization.
+  title: "Places to [stay]{.text-primary}"
+  description: Feel free to stay anywhere you'd like, but use El Dorado and 75 as your starting point, as it's centralized to to most event venues.
   features:
     - title: AI-Powered Focus Tracking
       description: Discover your optimal coding hours with real-time AI analysis of your productivity patterns.
@@ -70,92 +70,49 @@ features:
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 steps:
-  title: Start coding smarter in [3 steps]{.text-primary}
-  description: Transform your development workflow with our AI-powered assistant.
+  title: Things to [do]{.text-primary}
+  description: If you decide to make a weekend of it, here are some things to do in the area.
   items:
-    - title: Connect Your IDE
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
+    - title: Historic Downtown Mckinney
+      description: A quaint, historic town with a lot of shops and restaurants.  It's a great place to walk around and enjoy the day.  For anyone here on Friday we'll meet at the Celt Irish Pub in downtown for happyhour and appetizers
       image:
-        light: '/images/light/connect.svg'
-        dark: '/images/dark/connect.svg'
-    - title: Track & Analyze
-      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
+        light: "/images/light/connect.svg"
+        dark: "/images/dark/connect.svg"
+    - title: Shopping
+      description: Allen Premium Outlets and Stonebriar Shopping District are both within 20 minutes of the venue.
       image:
-        light: '/images/light/optimize.svg'
-        dark: '/images/dark/optimize.svg'
-    - title: Optimize & Code Smarter
-      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
+        light: "/images/light/optimize.svg"
+        dark: "/images/dark/optimize.svg"
+    - title: Dining and Entertainment
+      description: Plenty of options to choose from with a simple google search.  From Highend dining and steakhouses to casual family friendly and chain restaurants.  But it's highly recommended to check out Hutchins BBQ for lunch, they sell out early so skip breakfast and get there early.
       image:
-        light: '/images/light/track.svg'
-        dark: '/images/dark/track.svg'
-pricing:
-  title: Choose your [productivity]{.text-primary} path
-  description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
-  plans:
-    - title: Pro Developer
-      description: Perfect for individual developers focused on maximizing productivity.
-      price: $199
-      features:
-        - AI productivity tracking to optimize your peak coding hours
-        - Smart distraction alerts to maintain deep focus
-        - Personal code snippet library for faster development
-        - Deep Work Mode with Pomodoro timer integration
-        - Performance analytics dashboard
-        - Priority email support
-      button:
-        label: Buy now
-        color: neutral
-        variant: outline
-        to: '#'
-    - title: Team Developer
-      description: For bootstrappers and indie hackers.
-      price: $199
-      features:
-        - Everything in Pro Developer
-        - Team productivity analytics and insights
-        - Collaborative code snippet sharing
-        - Cross-team performance tracking
-        - Synchronized deep work sessions
-        - Priority team support with dedicated manager
-      button:
-        label: Buy now
-        variant: subtle
-        to: '#'
+        light: "/images/light/track.svg"
+        dark: "/images/dark/track.svg"
 testimonials:
   title: Join thousands of productive [developers]{.text-primary}
   description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
   items:
     - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
       user:
-        name: 'Sarah Doe'
-        description: 'Full Stack Developer'
+        name: "Sarah Doe"
+        description: "Full Stack Developer"
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19"
     - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
       user:
-        name: 'Sébastien Doe'
-        description:  'Lead Software Engineer'
+        name: "Sébastien Doe"
+        description: "Lead Software Engineer"
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux"
     - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
       user:
-        name: 'Benjamin Doe'
-        description:  'Senior Frontend Developer'
+        name: "Benjamin Doe"
+        description: "Senior Frontend Developer"
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
+          src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
 cta:
-  title: Build your landing page with [Nuxt UI Pro]{.text-primary}
+  title: Rsvp for updates and [Join the celebration]{.text-primary}
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
-  links:
-    - label: Buy now
-      to: 'https://ui.nuxt.com/pro/purchase'
-      target: _blank
-      icon: i-lucide-shopping-cart
-    - label: License
-      to: 'https://ui.nuxt.com/getting-started/license'
-      trailingIcon: i-lucide-circle-help
-      target: _blank
-      variant: subtle
