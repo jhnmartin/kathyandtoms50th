@@ -18,12 +18,11 @@ useSeoMeta({
 });
 
 const items = [
-  "https://picsum.photos/468/468?random=1",
-  "https://picsum.photos/468/468?random=2",
-  "https://picsum.photos/468/468?random=3",
-  "https://picsum.photos/468/468?random=4",
-  "https://picsum.photos/468/468?random=5",
-  "https://picsum.photos/468/468?random=6",
+  "/images/slide-1.webp",
+  "/images/slide-2.webp",
+  "/images/slide-3.webp",
+  "/images/slide-4.webp",
+  "/images/slide-5.webp",
 ];
 </script>
 
@@ -35,10 +34,33 @@ const items = [
       :ui="{ container: 'md:pt-18 lg:pt-20' }"
     >
       <template #title>
-        <MDC :value="page.title" class="sm:*:leading-11" />
+        <MDC :value="page.title" class="sm:*:leading-14" />
       </template>
       <UCarousel
         v-slot="{ item }"
+        class="block md:hidden"
+        :items="items"
+        :ui="{ item: 'basis-1/1' }"
+        :autoplay="true"
+        :interval="3000"
+        :loop="true"
+      >
+        <img :src="item" width="100%" height="100%" class="rounded-lg" />
+      </UCarousel>
+      <UCarousel
+        v-slot="{ item }"
+        class="hidden md:block xl:hidden"
+        :items="items"
+        :ui="{ item: 'basis-1/2' }"
+        :autoplay="true"
+        :interval="3000"
+        :loop="true"
+      >
+        <img :src="item" width="100%" height="100%" class="rounded-lg" />
+      </UCarousel>
+      <UCarousel
+        v-slot="{ item }"
+        class="hidden xl:block"
         :items="items"
         :ui="{ item: 'basis-1/3' }"
         :autoplay="true"
@@ -50,6 +72,7 @@ const items = [
     </UPageHero>
 
     <UPageSection
+      id="details"
       :description="page.section.description"
       :features="page.section.features"
       orientation="horizontal"
@@ -77,7 +100,7 @@ const items = [
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
-      id="features"
+      id="travel"
       :description="page.features.description"
       :features="page.features.features"
       :ui="{
@@ -101,7 +124,7 @@ const items = [
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
-      id="steps"
+      id="accommodations"
       :description="page.steps.description"
       class="relative overflow-hidden"
     >
@@ -117,12 +140,10 @@ const items = [
           class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
         >
-          <UColorModeImage
+          <img
             v-if="step.image"
-            :light="step.image?.light"
-            :dark="step.image?.dark"
-            :alt="step.title"
-            class="size-full"
+            :src="step.image"
+            class="size-full rounded-lg"
           />
 
           <div class="flex flex-col gap-2">
@@ -140,6 +161,7 @@ const items = [
     <USeparator />
 
     <UPageCTA
+      id="rsvp"
       v-bind="page.cta"
       variant="naked"
       class="overflow-hidden @container"

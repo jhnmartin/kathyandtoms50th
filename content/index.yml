@@ -1,27 +1,25 @@
 seo:
   title: Nuxt Landing Template
   description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
-title: Celebrating [50 Years]{.text-primary} of Marriage
+title: You're Invited to our [Golden Anniversary]{.text-primary}
 description: Join us Saturday September 20th, 2025 for Kathy and Tom Martin's 50th Wedding Anniversary Celebration!
 hero:
   links:
-    - label: Getting Started
+    - label: See Details
       icon: i-lucide-arrow-right
       trailing: true
       variant: subtle
-      to: https://ui.nuxt.com/getting-started/installation/pro/nuxt
-      target: _blank
+      to: "#details"
       size: xl
-    - label: Clone on GitHub
-      icon: i-simple-icons-github
+    - label: RSVP Now
+      icon: i-lucide-calendar-check
       size: xl
       color: neutral
       variant: ghost
-      to: https://github.com/nuxt-ui-pro/landing
-      target: _blank
+      to: "#rsvp"
 section:
   title: "[Event]{.text-primary} Details"
-  description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
+  description: details about the event
   images:
     mobile: "/images/macbook-mobile.svg"
     desktop: "/images/macbook.svg"
@@ -37,36 +35,18 @@ section:
       class: border-l border-default pt-4 pl-4
 features:
   title: "Places to [stay]{.text-primary}"
-  description: Feel free to stay anywhere you'd like, but use El Dorado and 75 as your starting point, as it's centralized to to most event venues.
+  description: Feel free to stay anywhere you'd like, but use El Dorado PKWY and HWY 75 as your starting point, as it's central to everything going on that weekend. Below are some of our Recommendations
   features:
-    - title: AI-Powered Focus Tracking
-      description: Discover your optimal coding hours with real-time AI analysis of your productivity patterns.
-      icon: i-lucide-wand-sparkles
+    - title: Sheraton McKinney Hotel
+      description: 1900 Gateway Blvd, McKinney, TX 75070
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Distraction Alerts
-      description: Get notified when your focus drifts and bring your attention back.
-      icon: i-lucide-bell-ring
+    - title: Home 2 Suites by Hilton McKinney
+      description: 2630 S. Central Expressway, McKinney, TX 75070
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Smart Code Snippets
-      description: Save and reuse frequently used code blocks for efficiency.
-      icon: i-lucide-code-xml
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Deep Work Mode
-      description: Block distractions and set structured coding sessions with built-in Pomodoro timers.
-      icon: i-lucide-moon
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Collaborative Insights
-      description: Sync your workflow with teammates and see when they are most productive.
-      icon: i-lucide-mouse-pointer-2
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Performance Analytics
-      description: Track your coding metrics and get insights to boost your speed and code quality.
-      icon: i-lucide-chart-line
+    - title: SpringHill Suites by Marriott McKinney
+      description: 2660 S. Central Expressway, McKinney, TX 75070
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 steps:
@@ -75,19 +55,13 @@ steps:
   items:
     - title: Historic Downtown Mckinney
       description: A quaint, historic town with a lot of shops and restaurants.  It's a great place to walk around and enjoy the day.  For anyone here on Friday we'll meet at the Celt Irish Pub in downtown for happyhour and appetizers
-      image:
-        light: "/images/light/connect.svg"
-        dark: "/images/dark/connect.svg"
-    - title: Shopping
-      description: Allen Premium Outlets and Stonebriar Shopping District are both within 20 minutes of the venue.
-      image:
-        light: "/images/light/optimize.svg"
-        dark: "/images/dark/optimize.svg"
+      image: "/images/downtown.webp"
+    - title: Dallas/Ft Worth
+      description: Nature, History, Culture, Nightlife.  Ton's of places to find cool things to do in the are.  Downtown Dallas just a 40 minute drive and Ft. Worth a little over an hour way,  there are plenty of options for entertainment in the surrounding areas.
+      image: "/images/dfw.webp"
     - title: Dining and Entertainment
-      description: Plenty of options to choose from with a simple google search.  From Highend dining and steakhouses to casual family friendly and chain restaurants.  But it's highly recommended to check out Hutchins BBQ for lunch, they sell out early so skip breakfast and get there early.
-      image:
-        light: "/images/light/track.svg"
-        dark: "/images/dark/track.svg"
+      description: Plenty of places to choose from with a simple google search.  From Highend dining and steakhouses to casual family friendly and chain restaurants.  But it's highly recommended to check out Hutchins BBQ for lunch, they always sell out so skip breakfast and get there early for top 5 BBQ in the US.
+      image: "/images/hutchins.webp"
 testimonials:
   title: Join thousands of productive [developers]{.text-primary}
   description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
