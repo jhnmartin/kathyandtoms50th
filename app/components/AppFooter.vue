@@ -69,13 +69,9 @@ function onSubmit() {
 </script>
 
 <template>
-  <USeparator class="h-px" />
-
   <UFooter :ui="{ top: 'border-b border-default' }">
-    <template #left>
-      <p class="text-sm text-muted">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
-      </p>
+    <template #top>
+      <img src="/images/footer-img.webp" alt="logo" class="w-full h-auto" />
     </template>
   </UFooter>
 </template>

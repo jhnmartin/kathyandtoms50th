@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center justify-center">
     <UModal>
-      <UButton label="RSVP for Updates" icon="i-lucide-calendar-check" />
+      <UButton label="RSVP Today" icon="i-lucide-calendar-check" size="xl" />
 
       <template #content>
         <Placeholder class="h-48 m-4" />

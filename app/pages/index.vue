@@ -86,12 +86,12 @@ const items = [
         <MDC :value="page.section.title" class="sm:*:leading-11" />
       </template>
       <img
-        :src="page.section.images.desktop"
+        :src="page.section.images.one"
         :alt="page.section.title"
         class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
       />
       <img
-        :src="page.section.images.mobile"
+        :src="page.section.images.one"
         :alt="page.section.title"
         class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
       />
@@ -103,22 +103,27 @@ const items = [
       id="travel"
       :description="page.features.description"
       :features="page.features.features"
+      orientation="horizontal"
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left',
       }"
       class="relative overflow-hidden"
     >
-      <div
-        class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]"
-      />
-      <div
-        class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]"
-      />
       <template #title>
         <MDC :value="page.features.title" class="*:leading-9" />
         <div class="hidden @min-[1020px]:block" />
       </template>
+      <img
+        :src="page.section.images.two"
+        :alt="page.section.title"
+        class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
+      />
+      <img
+        :src="page.section.images.two"
+        :alt="page.section.title"
+        class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
+      />
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />

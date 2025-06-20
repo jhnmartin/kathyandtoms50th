@@ -21,8 +21,8 @@ section:
   title: "[Event]{.text-primary} Details"
   description: details about the event
   images:
-    mobile: "/images/macbook-mobile.svg"
-    desktop: "/images/macbook.svg"
+    one: "/images/image-1.webp"
+    two: "/images/image-2.webp"
   features:
     - title: Time and Date
       description: Sept 20, 2025, 3:00pm
