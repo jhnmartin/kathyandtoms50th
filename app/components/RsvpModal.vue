@@ -159,36 +159,43 @@ const submitRsvp = async () => {
   showError.value = false;
 
   try {
-    // Replace with your Google Apps Script Web App URL
+    // Replace with your NEW Google Apps Script Web App URL
     const response = await $fetch(
-      "https://script.google.com/macros/s/AKfycbx8iwQbWH-9xUKcpqsG2FDM_9EwvWdd2GtpVz5mkz3uQZGAlZhlZXgD7W2sE5GdP58q/exec",
+      "https://script.google.com/macros/s/AKfycbxlzLgVcAN4TG7znyhn1gbqT0G8gVgHU6pM5G_GuyDyotyFFIbktAAKBJFnYHNmFTac/exec",
       {
         method: "POST",
-        body: {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
           email: formData.email,
           headcount: formData.headcount,
           arrivalDate: formData.arrivalDate,
           dietaryRestrictions: formData.dietaryRestrictions,
           specialRequests: formData.specialRequests,
           timestamp: new Date().toISOString(),
-        },
+        }),
       }
     );
 
-    showSuccess.value = true;
+    if (response.success) {
+      showSuccess.value = true;
 
-    // Reset form after successful submission
-    setTimeout(() => {
-      Object.assign(formData, {
-        email: "",
-        headcount: "",
-        arrivalDate: "",
-        dietaryRestrictions: "",
-        specialRequests: "",
-      });
-      isOpen.value = false;
-      showSuccess.value = false;
-    }, 2000);
+      // Reset form after successful submission
+      setTimeout(() => {
+        Object.assign(formData, {
+          email: "",
+          headcount: "",
+          arrivalDate: "",
+          dietaryRestrictions: "",
+          specialRequests: "",
+        });
+        isOpen.value = false;
+        showSuccess.value = false;
+      }, 2000);
+    } else {
+      throw new Error(response.error || "Submission failed");
+    }
   } catch (error) {
     console.error("RSVP submission error:", error);
     showError.value = true;
