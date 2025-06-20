@@ -161,7 +161,7 @@ const submitRsvp = async () => {
   try {
     // Replace with your NEW Google Apps Script Web App URL
     const response = await $fetch(
-      "https://script.google.com/macros/s/AKfycbxlzLgVcAN4TG7znyhn1gbqT0G8gVgHU6pM5G_GuyDyotyFFIbktAAKBJFnYHNmFTac/exec",
+      "https://script.google.com/macros/s/AKfycbxCB4byQkn5YyG2jVpXkce0HZyKej1CGmKMwLR1KqHG8lEPZxvHmorRJIg2wtvben71/exec",
       {
         method: "POST",
         headers: {
