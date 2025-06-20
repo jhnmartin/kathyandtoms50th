@@ -161,7 +161,7 @@ const submitRsvp = async () => {
   try {
     // Replace with your Google Apps Script Web App URL
     const response = await $fetch(
-      "https://script.google.com/a/macros/smithandgrain.com/s/AKfycbyN8s-_2gB6cj8lGQdsmw_yGmzo_OtfoiN-8ImHSWtdM51MW_QRBNhunvUSnEHDk0Oe/exec",
+      "https://script.google.com/macros/s/AKfycbx8iwQbWH-9xUKcpqsG2FDM_9EwvWdd2GtpVz5mkz3uQZGAlZhlZXgD7W2sE5GdP58q/exec",
       {
         method: "POST",
         body: {
