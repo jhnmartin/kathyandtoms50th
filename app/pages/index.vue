@@ -41,8 +41,7 @@ const items = [
         class="block md:hidden"
         :items="items"
         :ui="{ item: 'basis-1/1' }"
-        :autoplay="true"
-        :interval="3000"
+        :autoplay="{ delay: 2000 }"
         :loop="true"
       >
         <img :src="item" width="100%" height="100%" class="rounded-lg" />
@@ -52,8 +51,7 @@ const items = [
         class="hidden md:block xl:hidden"
         :items="items"
         :ui="{ item: 'basis-1/2' }"
-        :autoplay="true"
-        :interval="3000"
+        :autoplay="{ delay: 2000 }"
         :loop="true"
       >
         <img :src="item" width="100%" height="100%" class="rounded-lg" />
@@ -63,8 +61,7 @@ const items = [
         class="hidden xl:block"
         :items="items"
         :ui="{ item: 'basis-1/3' }"
-        :autoplay="true"
-        :interval="3000"
+        :autoplay="{ delay: 2000 }"
         :loop="true"
       >
         <img :src="item" width="100%" height="100%" class="rounded-lg" />
@@ -151,7 +148,7 @@ const items = [
             class="size-full rounded-lg"
           />
 
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-2 bg-zinc-100 dark:bg-zinc-900 pt-2">
             <span class="text-lg font-semibold">
               {{ step.title }}
             </span>
