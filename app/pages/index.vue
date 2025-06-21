@@ -148,7 +148,7 @@ const items = [
             class="size-full rounded-lg"
           />
 
-          <div class="flex flex-col gap-2 bg-zinc-100 dark:bg-zinc-900 pt-2">
+          <div class="flex flex-col gap-2 bg-white dark:bg-zinc-900 pt-2">
             <span class="text-lg font-semibold">
               {{ step.title }}
             </span>
