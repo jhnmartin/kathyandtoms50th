@@ -1,23 +1,11 @@
 <template>
   <div class="flex items-center justify-center">
-    <UModal v-model="isOpen">
-      <UButton
-        label="RSVP Today"
-        icon="i-lucide-calendar-check"
-        size="xl"
-        @click="isOpen = true"
-      />
+    <UModal title="RSVP for Our Anniversary">
+      <UButton label="RSVP Today" icon="i-lucide-calendar-check" size="xl" />
 
-      <template #content>
+      <template #body>
         <div class="p-6">
-          <div class="flex items-center justify-between mb-6">
-            <h3 class="text-2xl font-semibold">RSVP for Our Anniversary</h3>
-            <UButton
-              icon="i-lucide-x"
-              variant="ghost"
-              @click="isOpen = false"
-            />
-          </div>
+          <div class="flex items-center justify-between mb-6" />
 
           <UForm
             :state="formData"
