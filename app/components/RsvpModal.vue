@@ -159,24 +159,17 @@ const submitRsvp = async () => {
   showError.value = false;
 
   try {
-    // Replace with your NEW Google Apps Script Web App URL
-    const response = await $fetch(
-      "https://script.google.com/macros/s/AKfycbxCB4byQkn5YyG2jVpXkce0HZyKej1CGmKMwLR1KqHG8lEPZxvHmorRJIg2wtvben71/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.email,
-          headcount: formData.headcount,
-          arrivalDate: formData.arrivalDate,
-          dietaryRestrictions: formData.dietaryRestrictions,
-          specialRequests: formData.specialRequests,
-          timestamp: new Date().toISOString(),
-        }),
-      }
-    );
+    // Use our Nuxt API route instead of direct Google Apps Script
+    const response = await $fetch("/api/rsvp", {
+      method: "POST",
+      body: {
+        email: formData.email,
+        headcount: formData.headcount,
+        arrivalDate: formData.arrivalDate,
+        dietaryRestrictions: formData.dietaryRestrictions,
+        specialRequests: formData.specialRequests,
+      },
+    });
 
     if (response.success) {
       showSuccess.value = true;
@@ -194,7 +187,7 @@ const submitRsvp = async () => {
         showSuccess.value = false;
       }, 2000);
     } else {
-      throw new Error(response.error || "Submission failed");
+      throw new Error("Submission failed");
     }
   } catch (error) {
     console.error("RSVP submission error:", error);
