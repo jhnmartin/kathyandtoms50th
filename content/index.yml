@@ -31,11 +31,11 @@ section:
       description: Eldorado Country Club, McKinney, TX
       class: border-l border-default pt-4 pl-4
     - title: Caveats
-      description: Depending on RSVP Quantity we may update the venue to accomodate quest headcount.  It will still be in Mckinney though
+      description: Depending on RSVP Quantity we may update the venue to accomodate a higher than expected headcount.  It will still be in Mckinney though
       class: border-l border-default pt-4 pl-4
 features:
   title: "Places to [stay]{.text-primary}"
-  description: Feel free to stay anywhere you'd like, but use El Dorado PKWY and HWY 75 as your starting point, as it's central to everything going on that weekend. Below are some of our Recommendations
+  description: Feel free to stay anywhere you'd like, but use El Dorado PKWY and HWY 75 as your starting point, as it's central to everything going on that weekend. Below are some of our recommendations
   features:
     - title: Sheraton McKinney Hotel
       description: 1900 Gateway Blvd, McKinney, TX 75070
@@ -54,13 +54,13 @@ steps:
   description: If you decide to make a weekend of it, here are some things to do in the area.
   items:
     - title: Historic Downtown Mckinney
-      description: A quaint, historic town with a lot of shops and restaurants.  It's a great place to walk around and enjoy the day.  For anyone here on Friday we'll meet at the Celt Irish Pub in downtown for happyhour and appetizers
+      description: A quaint, historic town with a lot of shops and restaurants.  It's a great place to walk around and enjoy the day.  For anyone here on Friday we'll meet at the Celt Irish Pub in downtown for happy hour and appetizers
       image: "/images/downtown.webp"
     - title: Dallas/Ft Worth
-      description: Nature, History, Culture, Nightlife.  Ton's of places to find cool things to do in the are.  Downtown Dallas just a 40 minute drive and Ft. Worth a little over an hour way,  there are plenty of options for entertainment in the surrounding areas.
+      description: Nature, History, Culture, Nightlife.  Ton's of places to find cool things to do in the area.  Downtown Dallas just a 40 minute drive and Ft. Worth a little over an hour way,  there are plenty of options for entertainment in the surrounding areas.
       image: "/images/dfw.webp"
     - title: Dining and Entertainment
-      description: Plenty of places to choose from with a simple google search.  From Highend dining and steakhouses to casual family friendly and chain restaurants.  But it's highly recommended to check out Hutchins BBQ for lunch, they always sell out so skip breakfast and get there early for top 5 BBQ in the US.
+      description: Plenty of places to choose from with a simple google search.  From high-end dining and steakhouses to casual family friendly and chain restaurants.  But it's highly recommended to check out Hutchins BBQ for at some point, they always sell out so skip breakfast and get there early for top 5 BBQ in the US.
       image: "/images/hutchins.webp"
 testimonials:
   title: Join thousands of productive [developers]{.text-primary}
@@ -89,4 +89,4 @@ testimonials:
           src: "https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac"
 cta:
   title: Rsvp for updates and [Join the celebration]{.text-primary}
-  description: Nuxt UI Pro is free in development, but you need a license to use it in production.
+  description: We'll be sending emails as the event gets closer with updated details and what to expect.

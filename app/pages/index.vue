@@ -34,7 +34,7 @@ const items = [
       :ui="{ container: 'md:pt-18 lg:pt-20' }"
     >
       <template #title>
-        <MDC :value="page.title" class="sm:*:leading-14" />
+        <MDC :value="page.title" class="*:leading-10 sm:*:leading-18" />
       </template>
       <UCarousel
         v-slot="{ item }"
