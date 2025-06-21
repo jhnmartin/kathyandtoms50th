@@ -25,6 +25,14 @@
             class="space-y-4"
             @submit="submitRsvp"
           >
+            <UFormField label="Full Name" name="fullName" required>
+              <UInput
+                v-model="formData.fullName"
+                placeholder="Enter your full name"
+                icon="i-lucide-user"
+              />
+            </UFormField>
+
             <UFormField label="Email Address" name="email" required>
               <UInput
                 v-model="formData.email"
@@ -42,26 +50,10 @@
               />
             </UFormField>
 
-            <UFormField label="Expected Arrival Date">
-              <UInput
-                v-model="formData.arrivalDate"
-                type="date"
-                icon="i-lucide-calendar"
-              />
-            </UFormField>
-
             <UFormField label="Dietary Restrictions" name="dietaryRestrictions">
               <UTextarea
                 v-model="formData.dietaryRestrictions"
                 placeholder="Any allergies or dietary requirements..."
-                :rows="3"
-              />
-            </UFormField>
-
-            <UFormField label="Special Requests" name="specialRequests">
-              <UTextarea
-                v-model="formData.specialRequests"
-                placeholder="Song requests, accessibility needs, etc..."
                 :rows="3"
               />
             </UFormField>
@@ -126,11 +118,10 @@ const showSuccess = ref(false);
 const showError = ref(false);
 
 const formData = reactive({
+  fullName: "",
   email: "",
   headcount: "",
-  arrivalDate: "",
   dietaryRestrictions: "",
-  specialRequests: "",
 });
 
 const headcountOptions = [
@@ -148,9 +139,9 @@ const headcountOptions = [
 ];
 
 const schema = z.object({
+  fullName: z.string().min(1, "Please enter your full name"),
   email: z.string().email("Invalid email address"),
   headcount: z.string().min(1, "Please select number of guests"),
-  // Removed arrivalDate from required validation
 });
 
 const submitRsvp = async () => {
@@ -163,11 +154,10 @@ const submitRsvp = async () => {
     const response = await $fetch("/api/rsvp", {
       method: "POST",
       body: {
+        fullName: formData.fullName,
         email: formData.email,
         headcount: formData.headcount,
-        arrivalDate: formData.arrivalDate,
         dietaryRestrictions: formData.dietaryRestrictions,
-        specialRequests: formData.specialRequests,
       },
     });
 
@@ -177,11 +167,10 @@ const submitRsvp = async () => {
       // Reset form after successful submission
       setTimeout(() => {
         Object.assign(formData, {
+          fullName: "",
           email: "",
           headcount: "",
-          arrivalDate: "",
           dietaryRestrictions: "",
-          specialRequests: "",
         });
         isOpen.value = false;
         showSuccess.value = false;
